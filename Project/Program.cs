@@ -12,26 +12,35 @@ namespace Project
         {
             while (true)
             {
-                Console.WriteLine("***HELLO! THIS IS MY CALCULATOR PROJECT***");
-                Console.WriteLine("Please choose one option!\n" +
-                                           "1 for Calculator\n" +
-                                       "2 for VAT Calculator\n" +
-                                                   "0 for Exit");
+                Console.WriteLine("***Здравейте! ТОВА Е МОЯТ ПРОЕКТ КАЛКУЛАТОР***");
+                Console.WriteLine("МОЛЯ, ИЗБЕРЕТЕ ОПЦИЯ:\n" +
+                                           "1 за калкулатор\n" +
+                                       "2 за ДДС калкулатор\n" +
+                                                   "0 за Изход");
 
                 int command = int.Parse(Console.ReadLine());
                 switch (command)
                 {
                     case 1:
-                        Console.WriteLine("Calculator selected.");
+                        Console.WriteLine("Избрахте калкулатор.");
+                        Console.WriteLine("Моля, изберете операция!\n"
+                           "1. За събиране --> +\n"
+                            "2. За изваждане --> -\n");
+                           string operation = Console.ReadLine();
+                            
+                            if (operation == "+")
+                        {
+
+                        }
                         break;
                     case 2:
-                        Console.WriteLine("VAT calculator selected.");
+                        Console.WriteLine("Избрахте ДДС калкулатор .");
                         break;
                     case 0:
-                        Console.WriteLine("Exit.");
+                        Console.WriteLine("Изход.");
                         return;
                     default:
-                        Console.WriteLine("Invalid command!");
+                        Console.WriteLine("Невалидна команда!");
                         break;
                 }
             }
