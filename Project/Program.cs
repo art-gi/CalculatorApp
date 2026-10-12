@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Project
 {
+    public class Operations
+{
+    public double Addition(double a, double b)
+    {
+        return a + b;
+    }
+}
+
     class Program
     {
         static void Main(string[] args)
         {
+
+            Operations oper = new Operations();
             while (true)
             {
                 Console.WriteLine("***Здравейте! ТОВА Е МОЯТ ПРОЕКТ КАЛКУЛАТОР***");
@@ -30,6 +37,13 @@ namespace Project
                             
                             if (operation == "+")
                         {
+                        Console.Write("First number: ");
+                        double a = double.Parse(Console.ReadLine());
+
+                        Console.Write("Second number: ");
+                        double b = double.Parse(Console.ReadLine());
+
+                            oper.
 
                         }
                         break;
